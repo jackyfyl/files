@@ -16,6 +16,7 @@ function FindProxyForURL(url, host) {
             dnsDomainIs(host, '.sourceforge.net') ||
             dnsDomainIs(host, 'devstack.org') ||
             dnsDomainIs(host, '.discuss.com.hk') ||
+            dnsDomainIs(host, 'cloud.feedly.com') ||
             shExpMatch(host, '*.google.com.*') ||
             host == 't.co' ||
             host == 'bit.ly' ||
