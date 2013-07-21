@@ -31,6 +31,6 @@ function FindProxyForURL(url, host) {
         return goagent;
     }
 
-    return "REDIRECT";
+    return "DIRECT";
 }
 
