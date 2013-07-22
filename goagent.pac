@@ -18,6 +18,7 @@ function FindProxyForURL(url, host) {
             dnsDomainIs(host, '.discuss.com.hk') ||
             dnsDomainIs(host, 'chinadigitaltimes.net') ||
             dnsDomainIs(host, 'cloud.feedly.com') ||
+            dnsDomainIs(host, '.youtube.com') ||
             shExpMatch(host, '*.google.com.*') ||
             host == 't.co' ||
             host == 'bit.ly' ||
