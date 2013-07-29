@@ -21,6 +21,9 @@ function FindProxyForURL(url, host) {
             dnsDomainIs(host, '.amazon.com') ||
             dnsDomainIs(host, '.youtube.com') ||
             dnsDomainIs(host, 'twitter.com') ||
+            dnsDomainIs(host, '.appspot.com') ||
+            dnsDomainIs(host, 'malsup.com') ||
+            
             shExpMatch(host, '*.google.com.*') ||
             host == 't.co' ||
             host == 'bit.ly' ||
