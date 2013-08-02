@@ -23,6 +23,8 @@ function FindProxyForURL(url, host) {
             dnsDomainIs(host, 'twitter.com') ||
             dnsDomainIs(host, '.appspot.com') ||
             dnsDomainIs(host, 'malsup.com') ||
+            dnsDomainIs(host, 'blogspot.com') ||
+            dnsDomainIs(host, 'blogger.com') ||
             
             shExpMatch(host, '*.google.com.*') ||
             host == 't.co' ||
