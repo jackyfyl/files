@@ -17,14 +17,25 @@ function FindProxyForURL(url, host) {
             dnsDomainIs(host, 'devstack.org') ||
             dnsDomainIs(host, '.discuss.com.hk') ||
             dnsDomainIs(host, 'chinadigitaltimes.net') ||
+            dnsDomainIs(host, 'cloud.feedly.com') ||
             dnsDomainIs(host, 'feedly.com') ||
             dnsDomainIs(host, '.amazon.com') ||
             dnsDomainIs(host, '.youtube.com') ||
             dnsDomainIs(host, 'twitter.com') ||
             dnsDomainIs(host, '.appspot.com') ||
             dnsDomainIs(host, 'malsup.com') ||
+            dnsDomainIs(host, 'blogspot.com') ||
+            dnsDomainIs(host, 'blogger.com') ||
+            dnsDomainIs(host, 'facebook.com') ||
+            dnsDomainIs(host, 'wordpress.com') ||
+            dnsDomainIs(host, 'getfoxyproxy.org') ||
+            dnsDomainIs(host, 'vimeo.com') ||
+            dnsDomainIs(host, 'keepvid.com') ||
+            dnsDomainIs(host, 'vpnss03.com') ||
+            dnsDomainIs(host, 'drupalcommerce.org') ||
+            dnsDomainIs(host, 'bbc.co.uk') ||
             dnsDomainIs(host, 'demandbase.com') ||
-            
+
             shExpMatch(host, '*.google.com.*') ||
             host == 't.co' ||
             host == 'bit.ly' ||
