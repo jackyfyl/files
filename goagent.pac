@@ -17,12 +17,13 @@ function FindProxyForURL(url, host) {
             dnsDomainIs(host, 'devstack.org') ||
             dnsDomainIs(host, '.discuss.com.hk') ||
             dnsDomainIs(host, 'chinadigitaltimes.net') ||
-            dnsDomainIs(host, 'cloud.feedly.com') ||
+            dnsDomainIs(host, 'feedly.com') ||
             dnsDomainIs(host, '.amazon.com') ||
             dnsDomainIs(host, '.youtube.com') ||
             dnsDomainIs(host, 'twitter.com') ||
             dnsDomainIs(host, '.appspot.com') ||
             dnsDomainIs(host, 'malsup.com') ||
+            dnsDomainIs(host, 'demandbase.com') ||
             
             shExpMatch(host, '*.google.com.*') ||
             host == 't.co' ||
