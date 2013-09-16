@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* font Document */
+
+@font-face{ 
+	font-family: 'GothamLight';
+	src:url(../font/gotham-light-webfont.eot);
+	src: url(../font/gotham-light-webfont.eot?#iefix) format('embedded-opentype'),
+	     url(../font/gotham-light-webfont.woff) format('woff'),
+	     url(../font/gotham-light-webfont.ttf) format('truetype'),
+	     url(../font/gotham-light-webfont.svg#webfont) format('svg');
+}
+
+@font-face{ 
+	font-family: 'GothamBook';
+	src:url(../font/gotham-book-webfont.eot);
+	src: url(../font/gotham-book-webfont.eot?#iefix) format('embedded-opentype'),
+	     url(../font/gotham-book-webfont.woff) format('woff'),
+	     url(../font/gotham-book-webfont.ttf) format('truetype'),
+	     url(../font/gotham-book-webfont.svg#webfont) format('svg');
+}
+
+@font-face{ 
+	font-family: 'GothamBold';
+	src:url(../font/gotham-bold-webfont.eot);
+	src: url(../font/gotham-bold-webfont.eot?#iefix) format('embedded-opentype'),
+	     url(../font/gotham-bold-webfont.woff) format('woff'),
+	     url(../font/gotham-bold-webfont.ttf) format('truetype'),
+	     url(../font/gotham-bold-webfont.svg#webfont) format('svg');
+}
+
+@font-face{ 
+	font-family: 'ExistenceLight';
+	src: url(../font/existence-light-webfont.eot);
+	src: url(../font/existence-light-webfont.eot?#iefix) format('embedded-opentype'),
+	     url(../font/existence-light-webfont.woff) format('woff'),
+	     url(../font/existence-light-webfont.ttf) format('truetype'),
+	     url(../font/existence-light-webfont.svg#webfont) format('svg');
+}
+
+@font-face{ 
+	font-family: 'Atlanta';
+	src:url(../font/atlanta-webfont.eot);
+	src: url(../font/atlanta-webfont.eot?#iefix) format('embedded-opentype'),
+	     url(../font/atlanta-webfont.woff) format('woff'),
+	     url(../font/atlanta-webfont.ttf) format('truetype'),
+	     url(../font/atlanta-webfont.svg#webfont) format('svg');
+}

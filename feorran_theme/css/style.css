@@ -1,0 +1,532 @@
+@charset "UTF-8";
+@import url("font.css");
+
+
+/* color charts
+--------------------------------------------------
+#b6f4f2 light green
+#f4d3b6 peach
+
+#ffc000 yellow
+#003fff blue
+--------------------------------------------------*/
+
+
+
+
+
+/* overall
+---------------------------------------------------------*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{
+	display:block;
+}
+
+body{
+	overflow-x:hidden;
+}
+
+img, a{
+	border:none;
+	text-decoration: none;
+}
+
+ul, li{
+	list-style-type: none;
+}
+
+ul{
+	padding-left:2px;
+}
+
+li{
+	padding-left:6px;
+}
+
+body{
+	min-width: 980px;
+}
+
+h1{
+	font-family: "GothamLight", Verdana, Geneva, sans-serif;
+	font-size:54px;
+}
+
+h2{
+	font-family: "GothamLight", Verdana, Geneva, sans-serif;
+	font-size:24px;
+	margin:50px 50px 30px 50px;
+	line-height:1.25em;
+}
+
+h3{
+	font-family: "GothamBook", Verdana, Geneva, sans-serif;
+	font-size:1em;
+	text-align:center;
+}
+
+h4{
+	font-family: "GothamBook", Verdana, Geneva, sans-serif;
+	font-size:1.25em;
+	text-transform:uppercase;
+	margin-top:20px;
+}
+
+h5{
+	font-family: "GothamLight", Verdana, Geneva, sans-serif;
+	font-size:16px;
+	margin:50px 50px 30px 50px;
+	line-height:1.25em;
+}
+
+
+p{
+    margin:20px 50px 0px 50px;
+}
+
+.outerWrapper{
+	width: 940px;
+	margin: 0 auto;
+	height:auto;
+	padding: 0;
+	font-family: "GothamBook", Verdana, Geneva, sans-serif;
+	font-size: 0.75em;
+	line-height: 1.75em;
+	text-align: justify;
+}
+
+a{
+	color: #003fff;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+hr{
+	size= 1px;
+	color:#f9f9f9;
+}
+
+blockquote {
+	background:#f9f9f9;
+	border-left:10px solid #ccc;
+	margin:20px 50px 0px 200px;
+	padding:.5em 10px;
+	quotes:"\201C""\201D""\2018""\2019";
+	font-style:italic;
+}
+blockquote:before {
+	color:#ccc;
+	content:open-quote;
+	font-size:4em;
+	line-height:.1em;
+	margin-right:.25em;
+	vertical-align:-.4em;
+}
+blockquote p {
+	display:inline;
+}
+
+blockquote cite::before {
+	content: "\2014 \2009";
+	line-height:2em;
+}
+
+blockquote cite{
+	float: right;
+	margin-right:0;
+}
+
+
+.horizontal_menu{
+	width:940px;
+	background:white;
+	opacity:1;
+	position:fixed;
+	float:clear;
+	padding: 0px 10px;
+	text-transform:uppercase;
+	margin:0;
+	margin-top:-10px;
+	z-index:100000;
+}
+
+.horizontal_menu li, footer ul{
+	display: inline;
+	padding: 10px;
+	font-size:1em;
+}
+
+.horizontal_menu a{
+	margin-right:8px;
+	color:black;
+	text-decoration:underline;
+}
+
+.horizontal_menu a:hover{
+	opacity:0.5;
+}
+
+
+
+	
+.float_right{
+	float:right;
+	padding-left:10px;
+}
+
+.float_left{
+	float:left;
+	padding-right:10px;
+}
+
+footer{
+	bottom:0;
+	font-size:9px;
+	opacity:0.8;
+}
+
+header{
+	top:0;
+}
+
+.feorran_logo{
+	padding:0;
+	margin-left:-10px;
+	margin-bottom:20px;
+	height:80px;
+	width:180px;
+}
+
+.feorran_logo a {
+	display: block;
+	width: 180px;
+	height: 80px;
+	background: transparent url('../image/feorran_logo.png') 0px -1px no-repeat;
+	-webkit-transition: background-position 0.5s ease 0.2s;
+	-moz-transition: background-position 0.5s ease 0.2s;
+	-ms-transition: background-position 0.5s ease 0.2s;
+	-o-transition: background-position 0.5s ease 0.2s;
+	transition: background-position 0.5s ease 0.2s;
+	opacity:1;
+}
+
+.feorran_logo a:hover {
+	opacity:0.8;
+}
+
+
+
+/* navigation
+---------------------------------------------------------*/
+
+#menuWrapper{
+	  width:180px;
+	  margin:-10px 0 0 0;
+	  float:left;
+	  position:relative;
+	  overflow:hidden;
+}
+
+#menu{
+	position: fixed;
+	width: 160px;
+	font-family: "Atlanta", Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 2em;
+	color: black;
+	background-color: #ffc000;
+	padding: 10px;
+	z-index: 9999;
+	opacity: 0.9;
+}
+
+#menu ul{
+	text-transform:uppercase;
+}
+
+#menu ul a{
+	color:black;
+	-webkit-transition: color 0.2s ease-in 0s;
+	-moz-transition: color 0.2s ease-in 0s;
+	-ms-transition: color 0.2s ease-in 0s;
+	-o-transition: color 0.2s ease-in 0s;
+	transition: color 0.2s ease-in 0s;
+}
+
+#menu ul a:hover{
+	color: #003fff;
+	text-decoration: underline;
+	-webkit-transition: color 0.2s ease-in 0s;
+	-moz-transition: color 0.2s ease-in 0s;
+	-ms-transition: color 0.2s ease-in 0s;
+	-o-transition: color 0.2s ease-in 0s;
+	transition: color 0.2s ease-in 0s;
+}
+
+#logo{
+	padding:0;
+	margin:-10px;
+	margin-bottom:20px;
+	height:80px;
+	width:180px;
+}
+
+#logo a {
+	display: block;
+	width: 180px;
+	height: 80px;
+	background: transparent url('../image/feorran_logo.png') 0px -1px no-repeat;
+	-webkit-transition: background-position 0.5s ease 0.2s;
+	-moz-transition: background-position 0.5s ease 0.2s;
+	-ms-transition: background-position 0.5s ease 0.2s;
+	-o-transition: background-position 0.5s ease 0.2s;
+	transition: background-position 0.5s ease 0.2s;
+}
+
+#logo a:hover {
+	background: transparent url('../image/feorran_logo.png') 0px -79px no-repeat;
+	-webkit-transition: background-position 0.5s ease 0.2s;
+	-moz-transition: background-position 0.5s ease 0.2s;
+	-ms-transition: background-position 0.5s ease 0.2s;
+	-o-transition: background-position 0.5s ease 0.2s;
+	transition: background-position 0.5s ease 0.2s;
+}
+
+.nav_footer{
+	line-height:1.5em;
+	font-size:8px;
+	text-align:center;
+	margin-top:20px;
+}
+
+.nav_footer a{
+	margin-right:8px;
+}
+
+
+
+
+/* main content
+---------------------------------------------------------*/
+
+#mainWrapper{
+	width:720px;
+	float:right;
+	margin: 0px 0 0 0;
+}
+
+article{
+	padding-top:10px;
+	padding-bottom:100px;
+	height:auto;
+	opacity:1;
+	min-height:1000px;
+}
+
+
+.bg{
+	clear:both;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+
+
+.expand{
+	margin:0 -2000px;
+	padding:0 2000px;
+}
+	
+.backtotop{
+	text-align:center;
+	clear:both;
+	padding-top:50px;
+}
+
+.news{
+	padding: 16px;
+	opacity: 0.8;
+	margin: 6px 10px;
+	background-color:white;
+	float:left;
+}
+
+#aboutus {
+	background:white url(../image/pattern.png) repeat 0 0;
+}
+
+
+
+	
+/* sub page menu
+---------------------------------------------------------*/
+#sub_logo{
+	padding:0;
+	margin:-10px;
+	margin-bottom:20px;
+	height:80px;
+	width:180px;
+}
+
+#sub_logo a {
+	display: block;
+	width: 180px;
+	height: 80px;
+	background: transparent url('../image/go_back.png') -1px 0px no-repeat;
+	-webkit-transition: background-position 0.5s ease 0.2s;
+	-moz-transition: background-position 0.5s ease 0.2s;
+	-ms-transition: background-position 0.5s ease 0.2s;
+	-o-transition: background-position 0.5s ease 0.2s;
+	transition: background-position 0.5s ease 0.2s;
+}
+
+#sub_logo a:hover {
+	background: transparent url('../image/go_back.png') -179px 0px no-repeat;
+	-webkit-transition: background-position 0.5s ease 0.2s;
+	-moz-transition: background-position 0.5s ease 0.2s;
+	-ms-transition: background-position 0.5s ease 0.2s;
+	-o-transition: background-position 0.5s ease 0.2s;
+	transition: background-position 0.5s ease 0.2s;
+}	
+	
+/* sub page content
+---------------------------------------------------------*/	
+	
+.section{
+    margin-top:-20px;
+	margin-bottom:20px;
+    height:4000px;
+    width:100%;
+    float:left;
+}
+
+
+.black{
+    color:white;
+    background-color:black;
+}
+
+.black a{
+	color:#ffc000;
+}
+.black a:hover{
+	color:#ffc000;
+}
+
+.white{
+    color:black;
+	background-color:white;
+}
+	
+
+.bg_press{
+	background:#b6f4f2  url(../image/pattern.png) repeat 0 0 fixed;
+}
+
+
+.bg_ss2014{
+	background:white url(../image/stripe-light-bg.png) repeat 0 0 fixed ;	
+}
+	
+
+/* collection page menu
+---------------------------------------------------------*/
+#collection_menu{
+	position:fixed;
+	width: 160px;
+	font-family: "Atlanta", Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 2em;
+	color: black;
+	background-color: white;
+	padding: 10px;
+	z-index: 9999;
+	opacity: 1;
+}
+
+#collection_logo{
+	padding:0;
+	margin-left:-10px;
+	margin-bottom:20px;
+	height:80px;
+	width:180px;
+	opacity:1;
+}
+
+#collection_logo a {
+		opacity:1;
+	display: block;
+	width: 180px;
+	height: 80px;
+	background: transparent url('../image/collection_logo.png') -1px 0px no-repeat;
+	-webkit-transition: background-position 0.5s ease 0.2s;
+	-moz-transition: background-position 0.5s ease 0.2s;
+	-ms-transition: background-position 0.5s ease 0.2s;
+	-o-transition: background-position 0.5s ease 0.2s;
+	transition: background-position 0.5s ease 0.2s;
+}
+
+#collection_logo a:hover {
+		opacity:1;
+	background: transparent url('../image/collection_logo.png') -179px 0px no-repeat;
+	-webkit-transition: background-position 0.5s ease 0.2s;
+	-moz-transition: background-position 0.5s ease 0.2s;
+	-ms-transition: background-position 0.5s ease 0.2s;
+	-o-transition: background-position 0.5s ease 0.2s;
+	transition: background-position 0.5s ease 0.2s;
+}	
+
+.little_one_nav a:hover{
+	opacity: 0.7;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+
+.catalogue{
+	font-size:9px;
+	line-height:1.5em;
+	text-align:left;
+	padding:0;
+	text-transform:uppercase;
+}
+
+
+
+.color_swatch{
+	-ms-box-shadow: 2px 2px 2px #ddd;
+	-o-box-shadow: 2px 2px 2px #ddd;
+	-moz-box-shadow: 2px 2px 2px #ddd;
+	-webkit-box-shadow: 2px 2px 2px #ddd;
+	box-shadow: 2px 2px 2px #ddd;
+}
+
+.label{
+	color:#999;
+}
+
+.price{
+	font-size:1.5em;
+}
+
+.clear{
+	clear:both;
+}
+
+.content{
+	padding:10px;
+	padding-top:160px;
+	width:100%;
+	background-color:white;
+	min-height:1000px;
+}
+
+
+
+
+

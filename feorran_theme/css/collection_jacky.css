@@ -1,0 +1,431 @@
+@charset "UTF-8";
+@import url("font.css");
+
+
+/* color charts
+--------------------------------------------------
+#b6f4f2 light green
+#f4d3b6 peach
+
+#ffc000 yellow
+#003fff blue
+--------------------------------------------------*/
+
+
+
+
+
+/* overall
+---------------------------------------------------------*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{
+	display:block;
+}
+
+body{
+	
+}
+
+img, a{
+	border:none;
+	text-decoration: none;
+}
+
+ul, li{
+	list-style-type: none;
+}
+
+h1{
+	font-family: "GothamLight", Verdana, Geneva, sans-serif;
+	font-size:54px;
+}
+
+h2{
+	font-family: "GothamLight", Verdana, Geneva, sans-serif;
+	/*font-size:24px;*/
+	margin:50px 50px 30px 50px;
+	line-height:1.25em;
+}
+
+h3{
+	font-family: "GothamBook", Verdana, Geneva, sans-serif;
+	font-size:1em;
+	text-align:center;
+}
+
+h4{
+	font-family: "GothamBook", Verdana, Geneva, sans-serif;
+	font-size:1.25em;
+	text-transform:uppercase;
+	margin-top:20px;
+}
+
+p{
+    margin:20px 50px 0px 50px;
+}
+
+
+.outerWrapper{
+	width: 940px;
+	margin: 0 auto;
+	height:auto;
+	padding: 0;
+	font-family: "GothamBook", Verdana, Geneva, sans-serif;
+	font-size: 0.75em;
+	line-height: 1.75em;
+	text-align: justify;
+	background-color:white;
+}
+
+
+a{
+	color: #003fff;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+hr{
+	size= 1px;
+	color:#CCC;
+}
+
+
+.horizontal_menu{
+	width:920px;
+	background-color:white;
+	float:clear;
+	padding: 0px 10px;
+	text-transform:uppercase;
+	margin:0;
+	margin-top:-10px;
+	z-index:500;
+	position:fixed;
+}
+
+.menu{
+	clear:both;
+}
+
+
+.horizontal_menu li, footer ul{
+	display: inline;
+	padding: 10px;
+	font-size:1em;
+}
+
+.horizontal_menu a{
+	margin-right:8px;
+	color:black;
+	text-decoration:underline;
+}
+
+.horizontal_menu a:hover{
+	opacity:0.5;
+}
+
+
+
+	
+.float_right{
+	float:right;
+	padding-left:10px;
+}
+
+.float_left{
+	float:left;
+	margin-left:0;
+	padding-left:0;
+	padding-right:10px;
+}
+
+footer{
+	bottom:0;
+	font-size:9px;
+	opacity:0.8;
+	position:fixed;
+}
+
+header{
+	top:0;
+	height:150px;
+	background-color:white;
+}
+
+.feorran_logo{
+	padding:0;
+	margin-left:-10px;
+	margin-bottom:20px;
+	height:80px;
+	width:180px;
+}
+
+.feorran_logo a {
+	display: block;
+	width: 180px;
+	height: 80px;
+	background: transparent url('../image/feorran_logo.png') 0px -1px no-repeat;
+	-webkit-transition: background-position 0.5s ease 0.2s;
+	-moz-transition: background-position 0.5s ease 0.2s;
+	-ms-transition: background-position 0.5s ease 0.2s;
+	-o-transition: background-position 0.5s ease 0.2s;
+	transition: background-position 0.5s ease 0.2s;
+	opacity:1;
+}
+
+.feorran_logo a:hover {
+	opacity:0.8;
+}
+
+
+#menuWrapper{
+	  width:180px;
+	  float:left;
+	  position:fixed;
+	  overflow:hidden;
+	  padding:10px;
+	  top:130px;
+	  border-right:thin solid #CCC;
+	  z-index:500;
+	  
+}
+
+#menuWrapper img{
+	float:left;
+	margin: 5px;
+}
+
+
+
+#mainWrapper{
+	width:720px;
+	float:right;
+	margin-top:-10px;
+	position:relative;
+	/*padding:0 10px;*/
+}
+
+
+	
+
+
+
+.bg_ss2014, .front, html {
+	background:white url(../image/stripe-light-bg.png) repeat 0 0 fixed ;	
+}
+	
+
+/* collection page menu
+---------------------------------------------------------*/
+
+
+
+
+.little_one_nav a:hover{
+	opacity: 0.7;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+
+.catalogue{
+	font-size:9px;
+	line-height:1.5em;
+	text-align:left;
+	padding:0;
+	text-transform:uppercase;
+}
+
+
+
+.color_swatch{
+	-ms-box-shadow: 2px 2px 2px #ddd;
+	-o-box-shadow: 2px 2px 2px #ddd;
+	-moz-box-shadow: 2px 2px 2px #ddd;
+	-webkit-box-shadow: 2px 2px 2px #ddd;
+	box-shadow: 2px 2px 2px #ddd;
+}
+
+.label{
+	color:#999;
+}
+
+.price{
+	font-size:1.5em;
+}
+
+.clear{
+	clear:both;
+}
+
+.content, #content{
+	background-color:white;
+	height:auto;
+	font-size:9px;
+}
+
+/*.sidebar-first #content {
+width: auto;
+float: right;
+
+margin-left: auto;
+margin-right: auto;
+}
+*/
+
+.thumbnail{
+	background-color:white;
+	height:1000px;
+}
+
+.thumbnail a:hover{
+	opacity:0.5;
+}
+
+.section{
+	background-color:white;
+	height:2000px;
+	/*padding-top:140px;*/
+	line-height:1.25em;
+	text-transform:uppercase;
+	text-align:left;
+}
+
+.updown{
+	padding:10px;
+	clear:both;
+	text-align:center;
+}
+
+.updown a:hover{
+	opacity:0.5;}
+
+.rotate {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	vertical-align:top;
+}
+
+.align_left{
+	float:left;
+	text-align:left;
+	font-family: "GothamLight", Verdana, Geneva, sans-serif;
+	font-size:54px;
+	line-height:1em;
+	margin-left:80px;
+}
+
+.empty{
+	margin-left:60px;
+}
+
+.text_section{
+	background-color:white;
+	height:2000px;
+	/*padding-top:140px;*/
+	font-size:12px;
+	line-height:1.5em;
+}
+
+
+.splash{
+	text-align:center;
+	margin-top:100px;
+	}
+    
+.node__title, .node-title{
+    display: none;
+}
+
+article header {
+    display: none;
+}
+
+#main {
+    top: 150px;
+    position: relative;
+}
+
+.view-mode-full {
+    /*height: 2000px;*/
+}
+
+.ss2014_footer{
+}
+
+.cls_field_images{
+    float: left;
+}
+
+.cls_page_field_others, .cls_field_others{
+    float: right;
+    width: 240px;
+    margin-left: 5px;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.page__title{
+    display: none;
+}
+
+.cls-footer-block {
+    height: 450px;
+}
+
+#main {
+    padding-top: 1px;
+}
+
+table {
+    margin-top: 0px;
+}
+
+.views-view-grid.cols-1{
+    width: 732px;
+}
+
+.clothing_product_name{
+    font-weight: bold;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.item-list > ul {
+    padding-left: 5px;
+    /*text-transform: uppercase;*/
+    font-size: 9px;
+}
+
+.region.region-sidebar-first.column.sidebar{
+    /*border-right: thin solid #CCC;*/
+}
+
+.field .field-label{
+  font-weight: normal;
+  color: #999;
+}
+
+[for="edit-attributes-field-color"],
+[for="edit-attributes-field-size"],
+[for="edit-quantity"]
+{
+  font-weight: normal;
+  color: #999;
+}
+
+article div .field-type-text{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#skip-link{
+    display: none;
+}
+

@@ -33,6 +33,7 @@ function FindProxyForURL(url, host) {
             dnsDomainIs(host, 'vpnss03.com') ||
             dnsDomainIs(host, 'drupalcommerce.org') ||
             dnsDomainIs(host, 'bbc.co.uk') ||
+            dnsDomainIs(host, 'readitlater.com') ||
             
             shExpMatch(host, '*.google.com.*') ||
             host == 't.co' ||

@@ -1,0 +1,310 @@
+@charset "UTF-8";
+@import url("font.css");
+
+@media all and (max-width: 479px) {
+    header.horizontal_menu ul.float_right{
+        clear: left;
+    }
+    .horizontal_menu h1{
+    font-family: "GothamLight", Verdana, Geneva, sans-serif;
+    padding-right: 1em;
+    font-size: 3em;
+    clear: left;
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 815px) {
+    header.horizontal_menu ul.float_right{
+        clear: left;
+    }
+    .horizontal_menu h1{
+    font-family: "GothamLight", Verdana, Geneva, sans-serif;
+    font-size: 34px;
+    text-align: left;
+    padding-right: 1em;
+    }
+    .float_right {
+    margin: 0;
+    overflow: hidden;
+    }
+}
+
+@media all and (min-width: 816px) {
+    header.horizontal_menu ul.float_right{
+        float: right;
+    }
+    .horizontal_menu h1{
+    font-family: "GothamLight", Verdana, Geneva, sans-serif;
+    font-size: 54px;
+    text-align: right;
+    padding-right: 1em;
+    }
+    .float_right {
+    margin: 0;
+    overflow: hidden;
+    white-space:nowrap;
+    }
+}
+
+.horizontal_menu{
+    background: white;
+    z-index: 500;
+}
+
+header.horizontal_menu{
+    margin-top: -10px;
+}
+
+#main {
+    clear: both;
+}
+
+.bg_ss2014, .front, html, body {
+	background:white url(../image/stripe-light-bg.png) repeat 0 0 fixed;
+    height: 100%;
+}
+
+.node__title, .node-title{
+    display: none;
+}
+
+.cls_field_images, .cls_field_others{
+    float: left;
+}
+
+.feorran_logo a {
+	display: block;
+    float: left;
+	width: 180px;
+	height: 80px;
+	background: transparent url('../image/feorran_logo.png') 0px -1px no-repeat;
+	-webkit-transition: background-position 0.5s ease 0.2s;
+	-moz-transition: background-position 0.5s ease 0.2s;
+	-ms-transition: background-position 0.5s ease 0.2s;
+	-o-transition: background-position 0.5s ease 0.2s;
+	transition: background-position 0.5s ease 0.2s;
+	opacity:1;
+}
+
+
+
+.horizontal_menu .menu {
+    clear: both;
+}
+
+.horizontal_menu .menu ul{
+    padding-left: 0;
+}
+
+.horizontal_menu .menu ul li{
+    text-transform: uppercase;
+    font-size: 12px;
+    float: left;
+    padding-right: 1em;
+}
+
+.cls_page_field_others, .cls_field_others{
+    padding-left: 5px;
+    font-size: 9px;
+    text-transform: uppercase;
+    float: left;
+}
+
+.field .field-label{
+  font-weight: normal;
+  color: #999;
+}
+
+[for="edit-attributes-field-color"],
+[for="edit-attributes-field-size"],
+[for="edit-quantity"]
+{
+  font-weight: normal;
+  color: #999;
+}
+
+#user-login-form  label,
+#user-login-form  .item-list li,
+#block-system-navigation  .menu,
+#block-system-user-menu .menu
+{
+    font-size: 9px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#user-login-form  .item-list li,
+#block-system-navigation  li,
+#block-system-user-menu li
+{
+    list-style-type: none;
+}
+
+#user-login-form  .item-list ul,
+#user-login-form  ul,
+#block-system-navigation  ul,
+#block-system-user-menu ul
+{
+    padding-left: 0;
+}
+
+.menu a,
+#user-login-form  .item-list ul a
+{
+	color:black;
+	text-decoration:underline;
+}
+
+#user-login-form input[type="submit"]{
+    font-size: 0.75em;
+}
+
+
+.horizontal_menu a:hover,
+.menu a:hover,
+#user-login-form  .item-list ul  li a:hover
+{
+	opacity:0.5;
+}
+
+.horizontal_menu li, footer ul{
+	display: inline;
+	padding: 10px;
+	font-size:1em;
+}
+
+.horizontal_menu a{
+	margin-right:8px;
+	color:black;
+	text-decoration:underline;
+}
+
+.sidebar .menu__item.is-leaf {
+  list-style-image: url('');
+  *list-style-image: "";
+  list-style-type: none;
+}
+
+.region.column.sidebar .block-title{
+	font-size: 0.75em;
+    text-transform: uppercase; 
+}
+
+footer.horizontal_menu {
+	font-size: 0.75em;
+    text-transform: uppercase;
+	font-family: "GothamBook", Verdana, Geneva, sans-serif;
+    bottom: 0;
+    /*position: fixed;*/
+    opacity: 0.8;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.outerWrapper{
+	max-width: 940px;
+	margin: 0 auto;
+	min-height:100%;
+	padding: 0;
+	font-family: "GothamBook", Verdana, Geneva, sans-serif;
+	font-size: 0.75em;
+	line-height: 1.75em;
+	text-align: justify;
+	background-color:white;
+}
+
+.cls_field_images {
+    margin-right: 5px;
+}
+
+.page__title{
+    display: none;
+}
+
+article.node-clothing-display.node.view-mode-full {
+    /* add margin to align the sidebar, same as table in normalize.css*/
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;    
+}
+table.views-view-grid article.node-clothing-display.node.view-mode-full {
+    /* except articles are wrapped by table;*/
+    margin-top: auto;
+    margin-bottom: auto;    
+}
+
+#skip-link{
+    display: none;
+}
+
+#mainWrapper{
+	margin-top:-10px;
+	position:relative;
+	/*padding:0 10px;*/
+}
+
+.thumbnail {
+	float:left;
+    margin-right: -10px;
+    margin-top: 1em;
+    width: 193px;
+}
+
+#concept div.float_left
+{
+	float:left;
+    font-size: 0.75em;
+    padding:20px;
+    
+}
+#concept div h4
+{
+	float:left;
+    font-size: 1.2em;
+    padding-left:10px;
+}
+
+.form-item-attributes-field-color{
+    max-width: 240px;
+    text-align: left;
+}
+
+#mainWrapper{
+    border-left:thin solid #CCC;
+    padding-left:10px;
+    margin-top: 1em;
+    float: left;
+    max-width: 725px;
+}
+
+.clear{
+    clear: left;
+    padding: 0;
+}
+
+.section {
+    line-height: 1.25em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+img, a{
+	border:none;
+	text-decoration: none;
+}
+
+h4{
+	font-family: "GothamBook", Verdana, Geneva, sans-serif;
+	font-size:1.25em;
+	text-transform:uppercase;
+    margin-bottom: 0;
+}
+
+.text_section p {
+    margin: 20px 50px 0px 50px;
+}
+
+.text_section {
+    font-size: 12px;
+    line-height: 1.5em;
+}
