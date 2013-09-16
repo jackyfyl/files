@@ -18,6 +18,7 @@ function FindProxyForURL(url, host) {
             dnsDomainIs(host, '.discuss.com.hk') ||
             dnsDomainIs(host, 'chinadigitaltimes.net') ||
             dnsDomainIs(host, 'cloud.feedly.com') ||
+            dnsDomainIs(host, 'feedly.com') ||
             dnsDomainIs(host, '.amazon.com') ||
             dnsDomainIs(host, '.youtube.com') ||
             dnsDomainIs(host, 'twitter.com') ||
@@ -33,8 +34,8 @@ function FindProxyForURL(url, host) {
             dnsDomainIs(host, 'vpnss03.com') ||
             dnsDomainIs(host, 'drupalcommerce.org') ||
             dnsDomainIs(host, 'bbc.co.uk') ||
-            dnsDomainIs(host, 'readitlater.com') ||
-            
+            dnsDomainIs(host, 'demandbase.com') ||
+
             shExpMatch(host, '*.google.com.*') ||
             host == 't.co' ||
             host == 'bit.ly' ||
